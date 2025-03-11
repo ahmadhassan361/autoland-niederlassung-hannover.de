@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Autoland</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+       
+    <style>
+        body {
+            background-color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .main-text {
+            color: #434548;
+        }
+
+        .top-bar {
+            background: #434548;
+            width: 100vw;
+            height: 2.25rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: .3rem 0 .3rem 0;
+            font: 14px / 1.4 'Open Sans', sans-serif;
+            color: white;
+        }
+
+        .top-bar span:not(:last-of-type)::after {
+            content: '|';
+            padding: 0 .5rem;
+        }
+
+        .header {
+            min-height: 84px;
+            width: 100%;
+            padding: 0 3%;
+        }
+
+        .header-main {
+            position: fixed;
+            z-index: 2004;
+            width: 100%;
+            border-bottom: 1px solid #e8e8e8;
+            background-color: white;
+        }
+
+        footer {
+            background: #898990;
+            color: #fff;
+            padding: 0;
+            position: relative;
+            border-top: 1px solid #dadae5;
+            /* background-color: #434548; */
+            background: transparent linear-gradient(179deg, #434548 0%, #202020 100%) 0 0 no-repeat padding-box;
+            padding: 4% 4% 1% 4%;
+        }
+
+        .footer-main-top {
+            /* padding: 4% 4%; */
+            color: white;
+        }
+
+        .footer-link-text {
+            font-size: 15px;
+        }
+
+        .real-footer {
+            background-color: #434548;
+
+        }
+        .icon-size{
+            font-size: 30px;
+        }
+        @media (max-width: 768px) {
+            .header {
+                padding-top: 10px;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .top-bar {
+                display: none;
+                font-size: 10px;
+            }
+            .icon-size{
+                font-size: 20px;
+            }
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-main">
+
+        <div class="top-bar"> <span>Montag - Freitag von 09:00 bis 20:00 Uhr</span> <span>Samstags von 09:00 bis 18:00
+                Uhr</span> <span>Sonn- und Feiertags immer große Autoschau von 09:00 bis 18:00 Uhr</span> </div>
+        <nav class="header navbar navbar-expand-lg bg-body-tertiary justify-content-between">
+            <a class="text-decoration-none " href="https://autoland.de/">
+
+                <img src="logo.svg" height="65" alt="" srcset="">
+            </a>
+            <div class=" d-flex align-items-center justify-content-end">
+                <a href="tel:+4951164722862" class="text-decoration-none d-flex align-items-center main-text">
+                    <i class="icon-size fas fa-phone-alt" ></i> &nbsp;
+                    <span class="fs-6"><strong>+49 511 64722862</strong></span>
+                </a>
+                <i class="icon-size fas fa-envelope mx-3 main-text" ></i>
+                <i class="icon-size fas fa-comments me-3 p-1 main-text" ></i>
+                <i class="icon-size fas fa-bars ms-2 main-text" ></i>
+            </div>
+        </nav>
+    </div>
+    <div style="padding-top: 120px; text-align: center;">
+        <img src="slider.jpg" alt="" style="width: 100%;" srcset="">
+        <h1 style="margin: 21px 0;font-weight: 600;" class="main-text">Katalog</h1>
+        <div style="color: red; width: 100px; height: 3px; background: red; margin: 0 auto; font-size: 1.14rem;"></div>
+        <div class="row mt-5 g-0">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 p-3">
+                <h3>Premium Cars</h3>
+                <iframe src="https://drive.google.com/file/d/1nbxGMziw9GCGYoyCvtypfJ7bE2Maw3lL/preview"
+                    style="height: 80dvh;" class="w-100"  allow="autoplay"></iframe>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6 p-3">
+                <h3>Exclusive Cars</h3>
+                <iframe src="https://drive.google.com/file/d/1TJqsEAJecSGxwT0ujSC4WHZ0j5xv53cJ/preview"
+                style="height: 80dvh;" class="w-100" allow="autoplay"></iframe>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <footer class="text-white p-4 mt-5" style="background-color: #000;">
+        <div class="container">
+            <!-- Footer Top Section -->
+            <div class="footer-main-top row">
+                <div class="col-12 col-sm-12 col-md-3 mb-4 mb-md-0">
+                    <div><strong>Service</strong></div>
+                    <div class="mt-2"><a href="https://autoland.de/auto" class="text-decoration-none text-white">Auto Kaufen</a></div>
+                    <div class="mt-2"><a href="https://autoland.de/finanzierung" class="text-decoration-none text-white">Finanzierung</a></div>
+                    <div class="mt-2"><a href="https://autoland.de/autoankauf" class="text-decoration-none text-white">Autoankauf</a></div>
+                    <div class="mt-2"><a href="https://autoland.de/inzahlungnahme" class="text-decoration-none text-white">Inzahlungnahme</a></div>
+                    <div class="mt-2"><a href="https://autoland.de/zahlung" class="text-decoration-none text-white">Bargeldlos bezahlen bei Autoland</a></div>
+                    <div class="mt-2"><a href="https://autoland.de/kostenlose-lieferung" class="text-decoration-none text-white">Lieferung in Wunsch-Niederlassung</a></div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 mb-4 mb-md-0">
+                    <div><strong>Unternehmen</strong></div>
+                    <div class="mt-2"><a href="https://autoland.de/ueber-uns" class="text-decoration-none text-white">Über uns</a></div>
+                    <div class="mt-2"><a href="https://autoland.de/stellenangebote" class="text-decoration-none text-white">Jobangebote</a></div>
+                    <div class="mt-2"><a href="https://autoland.de/#location-box" class="text-decoration-none text-white">Niederlassungen</a></div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 mb-4 mb-md-0">
+                    <div><strong>Hilfe</strong></div>
+                    <div class="mt-2"><a href="https://autoland.de/konkat" class="text-decoration-none text-white">Kontakt</a></div>
+                    <div class="mt-2"><a href="https://autoland.de/faq" class="text-decoration-none text-white">FAQ</a></div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 text-center text-md-start">
+                    <div><strong>10.000 Autos • 30 Marken</strong></div>
+                    <img class="mt-3 img-fluid" src="logos.svg" alt="Logos">
+                </div>
+            </div>
+            
+            <hr class="my-4" style="background-color: black; height: 2px;">
+            
+            <!-- Footer Bottom Section -->
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0 row">
+                    <img  src="white-logo.svg" alt="Logo" width="200" class="img-fluid col-12 col-sm-6 col-md-6">
+                    <div class="mt-4 mt-md-0 col-12 col-sm-6 col-md-6 text-start " style="font-size: 15px;">
+                        <div>Öffnungszeiten</div>
+                        <div>Montag - Freitag von 09:00 bis 20:00 Uhr</div>
+                        <div>Samstags von 09:00 bis 18:00 Uhr</div>
+                        <div>Sonn- und Feiertags immer große Autoschau</div>
+                        <div>von 09:00 bis 18:00 Uhr</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <div style="font-size: 14px;">Folgen Sie uns</div>
+                    <div class="d-flex justify-content-center mt-2">
+                        <a href="https://www.instagram.com/autolandag/" class="text-decoration-none text-white mx-2">
+                            <i class="fab fa-instagram" style="font-size: 28px;"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@autoland-ag" class="text-decoration-none text-white mx-2">
+                            <i class="fab fa-youtube" style="font-size: 32px;"></i>
+                        </a>
+                        <a href="https://www.facebook.com/autoland" class="text-decoration-none text-white mx-2">
+                            <i class="fab fa-facebook-square" style="font-size: 28px;"></i>
+                        </a>
+                        <a href="https://de.linkedin.com/company/autoland-ag" class="text-decoration-none text-white mx-2">
+                            <i class="fab fa-linkedin" style="font-size: 28px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4" style="font-size: 10px;">außerhalb der gesetzlichen Öffnungszeiten keine Beratung, Probefahrten und Verkauf</div>
+        </div>
+    </footer>
+    <div class="real-footer row align-items-center justify-content-between g-0 px-4 py-2 text-white"
+        >
+
+        <!-- Company Info -->
+        <div class="col-12 col-md-4 text-center text-md-start mb-2 mb-md-0" style="font-size: 12px;">
+            © 2025 Autoland AG <br>
+            Werner-von-Siemens-Str. 2, 06796 Brehna, Deutschland
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="col-12 col-md-8 d-flex flex-wrap justify-content-center justify-content-md-end"
+            style="gap: 15px; font-size: 12px;">
+            <a href="https://autoland.de/impressum" class="text-decoration-none text-white">Impressum</a>
+            <a href="https://autoland.de/allgemeine-nutzungsbedingungen" class="text-decoration-none text-white">Allgemeine Nutzungsbedingungen</a>
+            <a href="https://autoland.de/datenschutz" class="text-decoration-none text-white">Datenschutz</a>
+            <a href="https://autoland.de/hinweisgebersystem-nach-hinschg" class="text-decoration-none text-white">Hinweisgebersystem nach HinSchG</a>
+            <a href="https://autoland.de/beschwerde-nach-lksg" class="text-decoration-none text-white">Beschwerde nach LkSG</a>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+       
+</body>
+
+</html>
